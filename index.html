@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Analysis</title>
+
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <header>
+        <nav>
+            <h1>COVID-19 ANALYSIS</h1>
+            
+        </nav>
+    </header>
+    <main>
+        <ul class="tabs">
+            <li class="tab is-active">
+                <a data-switcher data-tab="1">STATISTICS</a>
+            </li>
+            <li class="tab">
+                <a data-switcher data-tab="2">HISTORY</a>
+            </li>
+            
+        </ul>
+        <section class="pages">
+            <div class="page is-active" data-page="1">
+                <h2>STATISTICS</h2>
+                <!--<p>Welcome to the home page</p>-->
+                <form id="myForm">
+                    <select id ="selectCountry">
+                    </select>
+                    <input id="btn"type="submit"value="SUBMIT">
+                </form>
+                <table id="table">
+                    <tr>
+                        <th id="">TOTAL CASES</th>
+                        <th id="">TOTAL RECOVERED</th>
+                        <th id="">TOTAL DEATHS</th>
+                    </tr>
+                    <tbody id ="tdata">
+                        <td id="cases"></td>
+                        <td id="recovered"></td>
+                        <td id="deaths"></td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page" data-page="2">
+                <h2>HISTORY</h2>
+                <!-- Chart is here-->
+                <canvas id="chart" width="400"></canvas>
+               
+            </div>
+            
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+    <script src="main.js">
+        
+    </script>
+</body>
+
+</html>
