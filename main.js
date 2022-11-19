@@ -73,8 +73,6 @@ deaths.append(values.deaths.total);
     
 	
 
-
-
 const date = new Date().toISOString().slice(0, 10)
 console.log(date)
 
@@ -91,16 +89,24 @@ fetch('https://covid-193.p.rapidapi.com/history?country=all&day='+date, options)
     const xlabels=[];
     const tlabels=[];
     const dlabels=[];
+    const ylabels=[];
+
 
 
     res.response.map((values)=>{
         const lab= values.cases.total;
         const labt= values.tests.total;
         const labd= values.deaths.total;
+        const ylab=values.time;
+
+        //const a= ylab.toLocaleTimeString();
+        //console.log(a);
+
 
         xlabels.push(lab);
         tlabels.push(labt);
         dlabels.push(labd);
+        ylabels.push(ylab);
 
 
     })
@@ -113,14 +119,14 @@ fetch('https://covid-193.p.rapidapi.com/history?country=all&day='+date, options)
         [{
             
           label: 'Total cases',
-          data: xlabels,
+          data: {"x":xlabels, "y":ylabels},
           backgroundColor:'rgba(255, 26, 104, 0.2)',
           borderColor:'rgba(255, 26, 104, 0.2)',
           borderWidth: 1,
           tension:0.4
         },{
           label: 'Total tests',
-          data: tlabels,
+          data: {tlabels},
           backgroundColor:'rgba(25, 26, 104, 0.2)',
           borderColor:'rgba(25, 26, 104, 0.2)',
           borderWidth: 1,

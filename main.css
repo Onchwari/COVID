@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #FFF;
+    background-color:white;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -27,7 +27,11 @@ header nav {
 header nav h1 {
     font-size: 28px;
     font-weight: 600;
+    color:darkblue;
     
+}
+span{
+    color:darkred;
 }
 
 main .tabs {
