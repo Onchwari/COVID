@@ -77,7 +77,6 @@ myForm.addEventListener("submit", function (e) {
 });
 /*Chart*/ 
 const date = new Date().toISOString().slice(0, 10);
-console.log(date);
 
 fetch(
   "https://covid-193.p.rapidapi.com/history?country=all&day=" + date,
@@ -85,7 +84,6 @@ fetch(
 )
   .then((res) => res.json())
   .then((res) => {
-    console.log(res);
 
     const ctx = document.getElementById("chart");
 
