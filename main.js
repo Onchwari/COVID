@@ -34,7 +34,7 @@ const options = {
     "X-RapidAPI-Host": "covid-193.p.rapidapi.com",
   },
 };
-
+/*Statistics Table*/
 fetch("https://covid-193.p.rapidapi.com/statistics", options)
   .then((data) => {
     return data.json();
@@ -75,7 +75,7 @@ myForm.addEventListener("submit", function (e) {
       });
     });
 });
-
+/*Chart*/ 
 const date = new Date().toISOString().slice(0, 10);
 console.log(date);
 
