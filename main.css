@@ -1,149 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 
 body {
-    background-color: #EEE;
+  background-color: #eee;
 }
 
 header {
-    background-color:white;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 130px;
-    padding-right: 142px;
-    padding-bottom: 10px;
-    padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 130px;
+  padding-right: 142px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 header nav h1 {
-    font-size: 28px;
-    font-weight: 600;
-    color:darkblue;
-    
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "lucida handwriting", cursive;
+  color: darkblue;
 }
-span{
-    color:darkred;
+span {
+  color: darkred;
+  font-family: "lucida handwriting", cursive;
 }
 
 main .tabs {
-    list-style-type: none;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    padding-right: 130px;
-    
+  list-style-type: none;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding-right: 130px;
 }
 
 main .tabs .tab {
-    display: block;
-
+  display: block;
 }
 
 main .tabs .tab a[data-switcher] {
-    display: block;
-    padding: 15px 30px;
-    text-decoration: none;
-    color: #FFF;
-    background-color: darkblue;
-    cursor: pointer;
-
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: darkblue;
+  cursor: pointer;
 }
 
 main .tabs .tab:hover a[data-switcher] {
-    background-color: darkred;
+  background-color: darkred;
 }
 
 main .tabs .tab.is-active a[data-switcher] {
-    background-color: darkred;
-    font-weight: 700;
+  background-color: darkred;
+  font-weight: 700;
 }
 
 main {
-    padding-left: 300px;
-    padding-right: 142px;
+  padding-left: 300px;
+  padding-right: 142px;
 }
 
 .pages {
-    margin-top: 70px;
-    padding: 50px 80px;
-    border-radius: 8px;
-    background-color: #FFF;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-    width: 60vw;
-    align-items: center;
+  margin-top: 70px;
+  padding: 50px 80px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  width: 60vw;
+  align-items: center;
 }
 
 .pages .page {
-    display: none;
+  display: none;
 }
 
 .pages .page.is-active {
-    display: block;
+  display: block;
 }
-
 
 /*FORM AND TABLE*/
-form{
-    padding: 10px;
-
+form {
+  padding: 10px;
 }
 #selectCountry {
-    border-radius:50px ;
-    border-color: black;
-    
+  border-radius: 50px;
+  border-color: black;
 }
-#btn{
-    border-radius:50px ;
-    background-color: darkred;
-    width: 10vw;
-    font-weight: bold;
-    border-color: darkred;
-    color: white;
-
+#btn {
+  border-radius: 50px;
+  background-color: darkred;
+  width: 10vw;
+  font-weight: bold;
+  border-color: darkred;
+  color: white;
 }
-#btn:hover{
-    background-color: darkblue;
-    border-color: darkblue;
+#btn:hover {
+  background-color: darkblue;
+  border-color: darkblue;
 }
-table, td, th {
-    border: 1px solid black;
+table,
+td,
+th {
+  border: 1px solid black;
 }
 table {
-    border-collapse: collapse;
-    text-align: center;
-    width: 100%;
-    
-} 
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
 
 /*CHART*/
 .chartMenu {
-    width: 130vw;
-    height: 50px;
-    background: #1A1A1A;
-    color: rgba(255, 26, 104, 1);
-  }
-  .chartMenu p {
-    font-size: 20px;
-  }
-  .chartCard {
-    width: 40vw;
-    height: calc(100vh - 70px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    padding-top: 2px;
-  }
-  .chartBox {
-    width: 700px;
-    background: white;
-  }
+  width: 130vw;
+  height: 50px;
+  background: #1a1a1a;
+  color: rgba(255, 26, 104, 1);
+}
+.chartMenu p {
+  font-size: 20px;
+}
+.chartCard {
+  width: 40vw;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 2px;
+}
+.chartBox {
+  width: 700px;
+  background: white;
+}
